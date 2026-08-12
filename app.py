@@ -124,7 +124,8 @@ app = FastAPI(
 @app.get("/")
 def root():
   return {"message":"Server is running .Visit/agent/playground/to chat.or /docs for the API."}
-  add_routes(app,formatted_agent_chain,path="/agent")
+    
+add_routes(app,formatted_agent_chain,path="/agent")
 
 
 if __name__ == "__main__":
